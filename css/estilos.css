@@ -192,15 +192,13 @@ a,li{
     text-transform: capitalize;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    cursor: pointer;
 }
 
 .contenido-bg .hero-contenido p{
     font-family: 'Playfair Display',sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 5rem;
-    cursor: pointer;
 }
 
 .contenido-bg .hero-contenido button{
@@ -223,14 +221,96 @@ a,li{
     background: rgba(0, 0, 0, 0.85);
 }
 
+/* Section Gallery */
 
+.contenedor{
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 144rem;
+    padding: 5rem 0;    
+    /* border: 1px solid blue; */
+    margin: auto;
+}
 
-
-
-
-.textos-gallery{
+.section-gallery{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 40rem;
 }
+
+.section-gallery .textos-gallery{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+    /* border: 1px solid orange; */
+}
+
+
+.section-gallery .textos-gallery h2{
+    width: 100%;
+    font-size: 2.1rem;
+    font-weight: 700;
+    font-family: 'Playfair Display',serif;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.section-gallery .textos-gallery p{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.divider-line{
+    position: relative;
+    width: 60rem;
+    height: 1rem;
+    background: url(../img/line.png) center center no-repeat;
+    margin-bottom: 5rem;
+}
+
+.section-gallery .img-gallery{
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-gallery .img-gallery .work{
+   text-align: center;
+   width: 100%;
+   margin-bottom: 4rem;
+}
+
+.section-gallery .img-gallery .work>img{
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    filter: brightness(90%);
+    margin-bottom: 3rem;
+    /* border: 1px solid blue; */
+}
+
+.section-gallery .img-gallery .work>h3{
+    width: 100%;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    /* border: 1px solid blue; */
+}
+
+
+
+
 
 
 
