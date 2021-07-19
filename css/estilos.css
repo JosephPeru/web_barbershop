@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    --primary-color: #222222;
+    --secondary-color: #ffffff;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a,li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.topbar{
+    position: relative;
+    border: 1px solid #999999;
+    width: 100%;
+    height: 5rem;
+    z-index: 2;
+}
+
+.topbar .contactos{
+    display: none;
+}
+
+.topbar .info-redes{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-right: 1px solid blue; */
+}
+
+.topbar .info-redes>span{
+    margin-left: 1rem;
+    cursor: pointer;
+    border-right: 1px solid #999999;
+    width: 40%;
+    height: 5rem;
+    line-height: 5rem;
+    color: var(--secondary-color);
+}
+
+.topbar .info-redes .fa-sign-in-alt{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+.topbar .info-redes .item-info-redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 0;
+    /* s */
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: 5rem;
+    cursor: pointer;
+}
+
+
+.topbar .info-redes .item-info-redes>li{
+    border-right: 1px solid #999999;
+    width: 120rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.topbar .info-redes .item-info-redes>li>i{
+    color: var(--secondary-color);
+}
+
+
+/* MENU */
+
+.menubar {
+    position: relative;
+    margin-top: 2rem;
+   /*  border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+/* Menu left side */
+
+.menubar .logo img{
+    /* border: 1px solid blue; */
+    width: 20rem;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center center;
+}
+
+/* Menu right side */
+
+.menubar .items-menu{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid yellow; */
+}
+
+.menubar .items-menu a{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+
+/* SECTION HERO */
+
+
+.contenido-bg{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    background-image: url("../img/BackgroundBarberShop.jpg") ;
+    background-repeat: no-repeat;
+    /* opacity: 0.65; */
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    margin-bottom: 100rem;
+    background-size: cover;
+    /* border: 4px solid pink; */
+    /* background-color: black; */
+    
+}
+
+.contenido-bg::before{
+    content: '';
+    background-size: cover;
+    background-color: #222222;
+    height: 100vh;
+    width: 100%;
+    left: 0rem;
+    top: 0rem;
+    position: absolute;
+    opacity: 0.80;
+    z-index: 1;
+}
+
+.contenido-bg .hero-contenido{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* z-index: 40; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 32rem;
+    /* border: 2px solid yellow; */
+    position: relative;
+    z-index: 2;
+    color: var(--secondary-color);
+}
+
+.contenido-bg .hero-contenido h1{
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.contenido-bg .hero-contenido p{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.contenido-bg .hero-contenido button{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.85);
+    border: none;
+    outline: none;
+    line-height: 3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: padding 0.5s;
+}
+
+
+.contenido-bg .hero-contenido button:hover{
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+
+
+
+
+
+.textos-gallery{
+    margin-top: 40rem;
+}
+
+
+
+
