@@ -7,6 +7,7 @@
 
 html{
     font-size: 62.5%;
+    
 }
 
 body{
@@ -134,7 +135,6 @@ a,li{
     font-weight: 400;
 }
 
-
 /* SECTION HERO */
 
 
@@ -221,94 +221,281 @@ a,li{
     background: rgba(0, 0, 0, 0.85);
 }
 
-/* Section Gallery */
+    /*No puede ir position relative porque tomará su posición por defecto y en este caso tiene un elemento antes con posicion absolute lo cual si lleva relative se pegará al elemento anterior del*/
+    .contenedor{
+        position: relative;
+        width: 90%;
+        /* background:  mediumturquoise; */
+        border: 1px solid magenta;
+        margin-top: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 144rem;
+    }
 
-.contenedor{
-    position: relative;
-    width: 90%;
-    height: auto;
-    max-width: 144rem;
-    padding: 10rem 0;    
-    /* border: 1px solid blue; */
-    margin: auto;
-}
+    .section-gallery{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 144rem;
+    }
 
-.section-gallery{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40rem;
-}
+    .section-gallery .textos-gallery{
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 4rem;
+        /* border: 1px solid orange; */
+    }
 
-.section-gallery .textos-gallery{
+    .section-gallery .textos-gallery h2{
+        width: 100%;
+        font-size: 2.1rem;
+        font-weight: 700;
+        font-family: 'Playfair Display',serif;
+        color: var(--primary-color);
+        text-transform: capitalize;
+        margin-bottom: 4rem;
+    }
+    
+    .section-gallery .textos-gallery p{
+        font-family: 'Playfair Display',sans-serif;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .divider-line{
+        position: relative;
+        width: 100%;
+        height: 1rem;
+        background: url(../img/line.png) center center no-repeat;
+        margin-bottom: 5rem;
+    }
+
+    .section-gallery .img-gallery{
+        display: flex;  
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        /* background: maroon; */
+    }
+
+    .section-gallery .img-gallery .work{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 4rem;
+     }
+
+
+    .section-gallery .img-gallery .work>img{
+        width: 30rem;
+        height: 32rem;
+        border-radius: 100%;
+        filter: brightness(90%);
+        margin-bottom: 3rem;
+        /* border: 1px solid blue; */
+    }
+
+    .section-gallery .img-gallery .work>h3{
+        width: 100%;
+        font-family: 'Playfair Display',sans-serif;
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+        /* border: 1px solid blue; */
+    }
+
+    .section-gallery .img-gallery .work>p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--primary-color);
+    }
+
+
+/* Section hours */
+
+ #section-hours-parallax{
     position: relative;
-    width: 100%;
-    height: auto;
     text-align: center;
-    margin-bottom: 4rem;
-    /* border: 1px solid orange; */
+    width: 100%;
+    padding:6.6rem 0;
+    margin-right: 2rem;
+    background:url(../img/71279350_108678930407493_5509120871728966942_n.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 100;
 }
 
+#section-hours-parallax::before{
+    content: '';
+    position: absolute;
+    left: 0;    
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    opacity: 0.75;
+    z-index: -1;
+}
 
-.section-gallery .textos-gallery h2{
+.container{
+    background-color:transparent;
+    width: 90%;
+    margin: auto;
+    border: 1px solid blueviolet;      
+}
+
+.container .schedule{
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.container .schedule h2{
     width: 100%;
     font-size: 2.1rem;
     font-weight: 700;
     font-family: 'Playfair Display',serif;
-    color: var(--primary-color);
-    text-transform: capitalize;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
-.section-gallery .textos-gallery p{
-    font-family: 'Playfair Display',sans-serif;
+.container .schedule p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.4rem;
-    font-weight: 200;
-    margin-bottom: 1rem;
-}
-
-.divider-line{
-    position: relative;
-    width: 60rem;
-    height: 1rem;
-    background: url(../img/line.png) center center no-repeat;
-    margin-bottom: 5rem;
-}
-
-.section-gallery .img-gallery{
-    display: flex;  
-    align-items: center;
-    flex-wrap: wrap;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 4rem;
     width: 100%;
 }
 
-.section-gallery .img-gallery .work{
-   text-align: center;
-   width: 100%;
-   margin-bottom: 4rem;
+.container .schedule .line{
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 8rem;
 }
 
-.section-gallery .img-gallery .work>img{
-    width: 32rem;
-    height: 32rem;
-    border-radius: 50%;
-    filter: brightness(90%);
-    margin-bottom: 3rem;
-    /* border: 1px solid blue; */
+.container .hours-schedule{
+    /* border: 1px solid orangered; */
+    width: 100%;
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
 }
 
-.section-gallery .img-gallery .work>h3{
+.container .hours-schedule .time{
+    border: 1px solid #ffffff;
+    width: 45%;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .hours-schedule .time>h4{
+    width: 100%;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-family: 'Playfair Display',sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+/* Section Prices */
+
+.container .textos-prices{
+    position: relative;
+    width: 100%;
+    color: var(--secondary-color);
+    /* background: springgreen; */
+    text-align: center;
+    margin: 6.6rem 0;
+}
+
+.container .textos-prices h3{
     width: 100%;
     font-family: 'Playfair Display',sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
-    /* border: 1px solid blue; */
+}
+
+.container .textos-prices p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.container .textos-prices .line{
+    width: 100%;
+    height: 1rem;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
 }
 
 
+
+.list-prices{
+    position: relative;
+    width: 100%;
+    border: 1px solid orangered;
+    margin-bottom: 8rem;
+}
+
+.list-prices .price-one{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.list-prices .price-one>h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 0;
+    position: relative;
+    float: left;
+    padding-right: 8px;
+    color: var(--primary-color);
+}
+
+
+.list-prices .price-one .price-divisor {
+    height: 27px;
+    border-bottom: 1px dashed #999;
+    flex-grow: 100;
+    margin-bottom: 2rem;
+    
+}
+
+.list-prices .price-one .price{
+    font-family: playfair display,serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+    margin-bottom: 0;
+    padding-left: 10px;
+    color: #bb8c4b;
+}
 
 
 
