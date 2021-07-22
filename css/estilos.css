@@ -221,6 +221,9 @@ a,li{
     background: rgba(0, 0, 0, 0.85);
 }
 
+
+/* Section Gallery */
+
     /*No puede ir position relative porque tomará su posición por defecto y en este caso tiene un elemento antes con posicion absolute lo cual si lleva relative se pegará al elemento anterior del*/
     .contenedor{
         position: relative;
@@ -424,7 +427,7 @@ a,li{
 .container .textos-prices h3{
     width: 100%;
     font-family: 'Playfair Display',sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
 }
@@ -452,7 +455,7 @@ a,li{
 .list-prices{
     position: relative;
     width: 100%;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     margin-bottom: 8rem;
 }
 
@@ -466,12 +469,12 @@ a,li{
 
 .list-prices .price-one>h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
     line-height: 40px;
     margin-bottom: 0;
     position: relative;
-    float: left;
+    /* float: left; */
     padding-right: 8px;
     color: var(--primary-color);
 }
@@ -491,11 +494,83 @@ a,li{
     font-weight: 700;
     line-height: 40px;
     text-align: right;
-    float: right;
+   /*  float: right; */
     margin-bottom: 0;
     padding-left: 10px;
     color: #bb8c4b;
 }
+
+.list-prices>p{
+    position: relative;
+    width: 100%;
+    /* background-color: orange; */
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #999999;
+}
+
+
+/* Section FeedBack */
+.section-feedback{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid yellow;
+    margin-top: 6rem;
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /*  */
+    
+}
+
+
+.section-feedback::before{
+    content: '';
+    position: absolute;
+    left: 0;    
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: turquoise;
+    -webkit-filter: blur(50px);
+    
+}
+
+
+.container .textos-test{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 6rem 0;
+}
+
+.container .textos-test h2{
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display',serif;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.container .textos-test p{
+    position: relative;
+    width: 100%;
+    /* background-color: orange; */
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #999999;
+}
+
+
 
 
 
