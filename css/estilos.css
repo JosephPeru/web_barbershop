@@ -328,8 +328,7 @@ a,li{
     width: 100%;
     height: 100%;
     padding:6.6rem 0;
-    margin-right: 2rem;
-    background:url(../img/71279350_108678930407493_5509120871728966942_n.jpg) center center no-repeat;
+    background:url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=640&w=1820') center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
