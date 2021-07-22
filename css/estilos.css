@@ -330,6 +330,12 @@ a,li{
     background:url(../img/71279350_108678930407493_5509120871728966942_n.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     z-index: 100;
 }
 
@@ -348,8 +354,7 @@ a,li{
 .container{
     background-color:transparent;
     width: 90%;
-    margin: auto;
-    border: 1px solid blueviolet;      
+    margin: auto 
 }
 
 .container .schedule{
