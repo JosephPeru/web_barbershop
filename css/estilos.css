@@ -355,6 +355,7 @@ a,li{
     background-color:transparent;
     width: 90%;
     margin: auto;
+    border: 1px solid coral;
 }
 
 .container .schedule{
@@ -424,7 +425,7 @@ a,li{
     position: relative;
     width: 100%;
     color: var(--secondary-color);
-    /* background: springgreen; */
+    background: springgreen;
     text-align: center;
     margin: 6.6rem 0;
 }
@@ -490,7 +491,7 @@ a,li{
     border-bottom: 1px dashed #999;
     flex-grow: 100;
     margin-bottom: 2rem;
-    
+    width: 20%;
 }
 
 .list-prices .price-one .price{
