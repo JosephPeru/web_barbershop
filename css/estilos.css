@@ -225,12 +225,18 @@ a,li{
 /* Section Gallery */
 
     /*No puede ir position relative porque tomará su posición por defecto y en este caso tiene un elemento antes con posicion absolute lo cual si lleva relative se pegará al elemento anterior del*/
+    
+    .section-gallery{
+        border: 4px solid gold;
+        margin-top: 34rem;
+    }
+   
     .contenedor{
         position: relative;
         width: 90%;
         /* background:  mediumturquoise; */
         border: 1px solid magenta;
-        margin-top: 60rem;
+        margin-top: 6rem;
         margin-left: auto;
         margin-right: auto;
         max-width: 144rem;
@@ -294,8 +300,8 @@ a,li{
 
 
     .section-gallery .img-gallery .work>img{
-        width: 30rem;
-        height: 32rem;
+        width: 24rem;
+        height: 26rem;
         border-radius: 100%;
         filter: brightness(90%);
         margin-bottom: 3rem;
@@ -449,8 +455,6 @@ a,li{
     margin-bottom: 1rem;
 }
 
-
-
 .list-prices{
     position: relative;
     width: 100%;
@@ -521,12 +525,9 @@ a,li{
     margin-top: 6rem;
     background: #1F1C2C;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: linear-gradient(to top, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     /*  */
-    
 }
-
 
 .section-feedback::before{
     content: '';
@@ -536,7 +537,6 @@ a,li{
     width: 100%;
     height: 100%;
 }
-
 
 .container .textos-test{
     position: relative;
