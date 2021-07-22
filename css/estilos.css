@@ -323,18 +323,13 @@ a,li{
 
  #section-hours-parallax{
     position: relative;
-    overflow: hidden;
     text-align: center;
     width: 100%;
-    height: 100%;
     padding:6.6rem 0;
-    background:url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=640&w=1820') center center no-repeat;
+    margin-right: 2rem;
+    background:url(../img/71279350_108678930407493_5509120871728966942_n.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
     z-index: 1;
 }
 
@@ -354,7 +349,6 @@ a,li{
     background-color:transparent;
     width: 90%;
     margin: auto;
-    border: 1px solid coral;
 }
 
 .container .schedule{
@@ -424,7 +418,7 @@ a,li{
     position: relative;
     width: 100%;
     color: var(--secondary-color);
-    background: springgreen;
+    /* background: springgreen; */
     text-align: center;
     margin: 6.6rem 0;
 }
@@ -490,7 +484,7 @@ a,li{
     border-bottom: 1px dashed #999;
     flex-grow: 100;
     margin-bottom: 2rem;
-    width: 20%;
+    
 }
 
 .list-prices .price-one .price{
@@ -532,6 +526,47 @@ a,li{
     /*  */
     
 }
+
+
+.section-feedback::before{
+    content: '';
+    position: absolute;
+    left: 0;    
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container .textos-test{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 6rem 0;
+}
+
+.container .textos-test h2{
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display',serif;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.container .textos-test p{
+    position: relative;
+    width: 100%;
+    /* background-color: orange; */
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: #999999;
+}
+
+
 
 
 
